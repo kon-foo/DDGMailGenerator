@@ -1,0 +1,15 @@
+services:
+  duckduckgo-email:
+    build: .
+    container_name: ddg-mail-generator
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 120s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
