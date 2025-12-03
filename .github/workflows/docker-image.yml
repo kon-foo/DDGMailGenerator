@@ -19,6 +19,4 @@ jobs:
       uses: docker/build-push-action@v6.18.0
       with:
         push: true
-        tags: |
-          ghcr.io/ddg-mail-generator:$(date +%s)
-          ghcr.io/ddg-mail-generator:latest
+        tags: ghcr.io/ddg-mail-generator:latest
