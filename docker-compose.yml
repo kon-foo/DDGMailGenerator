@@ -1,6 +1,7 @@
 services:
   duckduckgo-email:
     build: .
+    image: ghcr.io/kon-foo/ddg-mail-generator:latest
     container_name: ddg-mail-generator
     ports:
       - "5000:5000"
