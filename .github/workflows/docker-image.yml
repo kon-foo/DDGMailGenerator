@@ -36,5 +36,5 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
-            ghcr.io/kon-foo/ddg-mail-generator::latest
-            ghcr.io/kon-foo/ddg-mail-generator::${{ github.sha }}
+            ghcr.io/kon-foo/ddg-mail-generator:latest
+            ghcr.io/kon-foo/ddg-mail-generator:${{ github.sha }}
